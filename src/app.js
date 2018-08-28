@@ -64,6 +64,6 @@ function createImageView(scaleMode) {
     background: '#aaaaaa',
     scaleMode: scaleMode
   }).on('tap', () => {
-  textView.text = 'TribonApp rocks!' + scaleMode + navigator.connection.type;
+  textView.text = 'TribonApp rocks! && ' + scaleMode + navigator.connection.type;
 }).appendTo(ui.contentView);
 }
