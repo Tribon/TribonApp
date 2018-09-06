@@ -67,3 +67,12 @@ function createImageView(scaleMode) {
   textView.text = 'TribonApp rocks! && ' + scaleMode + navigator.connection.type;
 }).appendTo(ui.contentView);
 }
+
+
+Photos.photos( 
+    function(photos) {
+        console.log(photos);
+    },
+    function(error) {
+        console.error("Error: " + error);
+    });
